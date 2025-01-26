@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&family=Zen+Dots&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #333c4d;
+    color: #eee;
+    font-family: "VT323", serif;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    border-radius: 12px;
+}
+
+.container .home-page {
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    gap: 12px;
+}
+
+.nav-bar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222;
+}
+
+.nav-bar li {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-bar a .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.nav-active {
+    background-color: #1c1c1c;
+}
+
+.info-bar {
+    width: 100%;
+    height: auto;
+    background-color: #2c2c2c;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 8px;
+}
+
+.total-money {
+    font-size: 32px;
+    color: #fff;
+}
+
+.info-bar-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.income-per-second {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.info-bar-bottom-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: #ddd;
+}
+
+.info-bar-bottom-item p {
+    font-size: 14px;
+}
+
+.info-bar-bottom-item span {
+    font-size: 22px;
+}
+
+.user-info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-pp {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    background-color: #2c2c2c;
+    border-radius: 50%;
+}
+
+.user-info-right {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.username-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.username {
+    font-size: 22px;
+}
+
+.edit-profile {
+    background-color: transparent;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+}
+
+.user-info-extra {
+    font-size: 14px;
+    color: #eee;
+}
+
+.home-dashboard {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-dashboard > div:nth-child(1) {
+    border-radius: 6px 0 0 6px;
+}
+
+.home-dashboard > div:nth-last-child(1) {
+    border-radius: 0 6px 6px 0;
+}
+
+.home-dashboard-item {
+    width: 15.8%;
+    padding: 8px;
+    background-color: #2c2c2c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.h-d-i {
+    width: 60%;
+    height: 50px;
+    background-color: #2f2f2f;
+    display: flex;
+    align-items: flex-end;
+}
+
+.h-d-i-1 .indicator {
+    width: 100%;
+    height: 48px;
+    background-color: #016e01;
+}
+
+.h-d-i-2 .indicator {
+    width: 100%;
+    height: 35px;
+    background-color: #326e01;
+}
+
+.h-d-i-3 .indicator {
+    width: 100%;
+    height: 42px;
+    background-color: #326e01;
+}
+
+.h-d-i-4 .indicator {
+    width: 100%;
+    height: 22px;
+    background-color: rgb(110, 94, 1);
+}
+
+.home-dashboard-item-name {
+    font-size: 14px;
+}
+
+.home-notification-box {
+    width: 100%;
+    height: 80px;
+    background-color: #2c2c2c;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+    scroll-snap-type: y mandatory;
+}
+
+.notification-item {
+    width: 100%;
+    min-height: 80px;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: center;
+}
